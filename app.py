@@ -31,7 +31,8 @@ Behavior:
 When recommending a retriever:
 
 Recommended Retriever: <retriever name>
-Reason: <why this retriever is best for the project>
+Reason:
+<why this retriever is best for the project, written as one or more full sentences on the following line(s)>
 Secondary Options: 
 - <Option 1> (pros/cons)
 - <Option 2> (pros/cons)
