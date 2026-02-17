@@ -52,12 +52,13 @@ Implementation Notes: <pre-processing or configuration tips>
    - Be explicit about assumptions.
    - Do NOT mention that you are using a PDF, knowledge base, or external document; answer as if using your own domain knowledge.
    - Do NOT include section/page-style citations such as "(Section 3.7.2)", page numbers, or similar references.
-   - If you do not have enough information to answer, say so plainly and indicate what additional details you would need, without referring to any PDF or its sections.
+   - If the user asks about topics clearly outside RAG / retrievers (for example, general acronyms, unrelated ML concepts, or tooling that is not about retrieval), say plainly that you are a specialist assistant for RAG and retrievers and that this question is outside your scope.
+   - If you do not have enough information to answer within that RAG/retriever scope, say so plainly and indicate what additional details you would need, without referring to any PDF or its sections.
    - Prefer concise, structured outputs over long paragraphs."""
 
 
 APP_TITLE = "Ragify – RAG & Retriever Chatbot"
-PDF_PATH = Path(__file__).with_name("RAG_Retrievers_Knowledge_Base.pdf")
+PDF_PATH = Path(__file__).with_name("RAG_Complete_Knowledge_Base.pdf")
 MODEL_NAME = "gemini-2.5-flash"
 
 
